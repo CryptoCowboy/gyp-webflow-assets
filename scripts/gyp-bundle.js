@@ -6,20 +6,6 @@
   f.media='print';f.onload=function(){f.media='all'};
   document.head.appendChild(f);
 
-  // === GRACE AI (all pages, deferred 5s/scroll) ===
-  var gd=0;
-  function lg(){
-    if(gd)return;gd=1;
-    var s=document.createElement('script');
-    s.src='https://unpkg.com/@elevenlabs/convai-widget-embed';
-    s.async=1;document.body.appendChild(s);
-    var w=document.createElement('elevenlabs-convai');
-    w.setAttribute('agent-id','agent_2901kh22ny41fhzt52zz1fpr8jaq');
-    document.body.appendChild(w);
-  }
-  setTimeout(lg,5e3);
-  addEventListener('scroll',lg,{once:1,passive:1});
-
   // === HOMEPAGE ONLY ===
   var root=document.getElementById('gyp-root');
   if(root){
