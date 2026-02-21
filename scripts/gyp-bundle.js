@@ -1,11 +1,4 @@
 (function(){
-  // === FONTS (all pages) ===
-  var f=document.createElement('link');
-  f.rel='stylesheet';
-  f.href='https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700&family=Outfit:wght@400;600&display=swap';
-  f.media='print';f.onload=function(){f.media='all'};
-  document.head.appendChild(f);
-
   // === HOMEPAGE ONLY ===
   var root=document.getElementById('gyp-root');
   if(root){
